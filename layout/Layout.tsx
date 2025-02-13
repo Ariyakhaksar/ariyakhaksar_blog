@@ -1,6 +1,6 @@
 "use client";
 
-import AnimatedLine from "@/ui/AnimatedLine";
+import AnimatedLine from "@/components/ui/AnimatedLine";
 import React from "react";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <div className="w-full">
       {children}
       <AnimatedLine />
     </div>
