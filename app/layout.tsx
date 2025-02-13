@@ -22,13 +22,9 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Layout>
-            <main>
-              {children}
-              <CustomCursor />
-              <BackToTop />
-            </main>
-          </Layout>
+          <Layout>{children}</Layout>
+          <CustomCursor />
+          <BackToTop />
         </ThemeProvider>
       </body>
     </html>

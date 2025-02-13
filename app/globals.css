@@ -6,4 +6,22 @@
   .topbutton {
     @apply fixed right-4 xl:right-7 2xl:right-16 bottom-6 xl:bottom-10 w-14 h-14 text-lg rounded-full bg-white dark:bg-zinc-800 dark:text-white shadow-sm shadow-slate-400 grid place-content-center text-black opacity-0 invisible transition duration-200 [&.btn-show]:opacity-100 [&.btn-show]:visible z-[9999];
   }
+  .TopNavList ul {
+    @apply flex gap-5;
+  }
+  .TopNavList ul li {
+    @apply relative;
+  }
+  .TopNavList ul li span {
+    @apply absolute bottom-0 left-0 bg-orange-300 w-0 h-[0.1px] -z-10  transition-all ease-in-out;
+  }
+  .TopNavList ul li:hover > span , .TopNavList ul li.active > span {
+    @apply w-2/3;
+  }
+  .TopNavList ul li a {
+    @apply transition-all ease-in-out hover:text-orange-300 z-10 block;
+  }
+  .TopNavList ul li.active a {
+    @apply text-orange-300;
+  }
 }
