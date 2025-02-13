@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Layout from "@/layout/Layout";
 import CustomCursor from "@/components/shared/CustomCursor";
+import BackToTop from "@/components/shared/BackToTop";
 
 export const metadata: Metadata = {
   title: "Ariya Khaksar",
@@ -16,11 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true} className="scroll-smooth">
-      <body className={`bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100`} suppressHydrationWarning={true}>
+      <body
+        className={`relative bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100`}
+        suppressHydrationWarning={true}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Layout>
-            {children}
-            <CustomCursor />
+            <main>
+              {children}
+              <CustomCursor />
+              <BackToTop />
+            </main>
           </Layout>
         </ThemeProvider>
       </body>
