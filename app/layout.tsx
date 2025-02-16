@@ -21,7 +21,7 @@ export default function RootLayout({
         className={`relative bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100`}
         suppressHydrationWarning={true}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Layout>{children}</Layout>
           <CustomCursor />
           <BackToTop />

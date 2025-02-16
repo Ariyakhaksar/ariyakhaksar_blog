@@ -20,7 +20,7 @@ const Layout = ({ children }: Props) => {
             <RightNav midContainer={midContainer} /> 
             */}
           <TopNav />
-          <div className="relative mx-auto minfo__contentBox max-w-container xl:max-2xl:max-w-65rem">{children}</div>
+          <div className="relative mx-auto max-w-container xl:max-2xl:max-w-65rem">{children}</div>
         </div>
       </div>
       <AnimatedLine />

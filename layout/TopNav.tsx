@@ -1,17 +1,19 @@
 import React from "react";
 import { RiShareLine } from "react-icons/ri";
 import Link from "next/link";
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdContentCopy } from "react-icons/md";
+import ShareButton from "@/components/shared/ShareButton";
+import ChangeMode from "@/components/shared/ChangeMode";
 
 type Props = {};
 
 const TopNav = (props: Props) => {
   return (
-    <div className="w-1/2 border rounded-xl  backdrop-blur-sm p-5 m-auto fixed left-1/2 -translate-x-1/2 z-20 flex justify-between items-center">
+    <div className="w-1/2 border dark:border-zinc-100 border-zinc-900 rounded-xl backdrop-blur-sm p-5 m-auto fixed left-1/2 -translate-x-1/2 z-20 flex justify-between items-center">
       <div className="text-xl font-bold">
-        <span className="text-orange-300">Ariya</span> Khaksar
+        <span className="dark:text-orange-300 text-orange-500">Ariya</span> Khaksar
       </div>
       <div className="TopNavList">
         <ul>
@@ -41,15 +43,9 @@ const TopNav = (props: Props) => {
           </li>
         </ul>
       </div>
-      <div className="relative">
-        <div className="bg-zinc-800 p-3 text-lg rounded-full hover:bg-orange-300 hover:text-zinc-800 transition-all ease-in-out cursor-pointer">
-          <RiShareLine />
-        </div>
-        <div className="absolute -bottom-9 left-1/2 -translate-x-1/2 bg-zinc-800 p-3 px-5 rounded-xl flex gap-5">
-            <span><FaInstagram /></span>
-            <span><FaLinkedin /></span>
-            <span><MdContentCopy /></span>
-        </div>
+      <div className="flex flex-row items-center gap-5">
+        <ChangeMode />
+        <ShareButton />
       </div>
     </div>
   );
