@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
   return (
     <div className="w-full">
       <div className="relative pt-10 minfo__app max-xl:pt-20">
-        <div className="max-lg:px-4">
+        <div className="max-lg:px-4 ">
           {/*
             <MobileMenuBar toggleDrawer={toggleDrawer} />
             <MobileNav isOpen={isOpen} toggleDrawer={toggleDrawer} />
