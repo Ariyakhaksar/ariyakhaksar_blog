@@ -27,11 +27,11 @@ const ChangeMode = (props: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="iconStyle" size={"icon"}>
+        <Button variant="iconStyle" className="bg-orange-100 border border-zinc-900 " size={"icon"}>
           <RxBlendingMode />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-48 dark:bg-zinc-900 bg-zinc-100 text-zinc-800 dark:text-zinc-100">
+      <DropdownMenuContent className="w-48 dark:bg-zinc-900 bg-orange-100 text-zinc-800 dark:text-zinc-100">
         <DropdownMenuRadioGroup value={theme as ThemeTypes} onValueChange={handleChange}>
           <DropdownMenuRadioItem value="dark" className="DropdownMenuRadioItemStyle">
             Dark

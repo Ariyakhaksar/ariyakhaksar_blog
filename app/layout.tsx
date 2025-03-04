@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true} className="scroll-smooth">
       <body
-        className={`relative bg-zinc-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 overflow-hidden`}
+        className={`relative bg-orange-100 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 overflow-hidden`}
         suppressHydrationWarning={true}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

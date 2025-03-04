@@ -6,7 +6,7 @@ type Props = {};
 const HomePage = (props: Props) => {
   return (
     <div className="relative pt-[100px]" style={{ zIndex: 19 }}>
-      {/* <Hero /> */}
+      <Hero />
     </div>
   );
 };

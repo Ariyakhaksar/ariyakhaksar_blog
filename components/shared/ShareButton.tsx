@@ -12,7 +12,7 @@ const ShareButton = () => {
     <DropdownMenu.Root>
       {/* دکمه اصلی */}
       <DropdownMenu.Trigger asChild>
-        <Button variant="iconStyle" size="icon">
+        <Button variant="iconStyle" size="icon" className="bg-orange-100 border border-zinc-900 ">
           <RiShareLine />
         </Button>
       </DropdownMenu.Trigger>
@@ -23,7 +23,7 @@ const ShareButton = () => {
           align="center"
           side="bottom" // مکان باکس
           sideOffset={10} // فاصله از دکمه
-          className="z-50 bg-zinc-100 dark:bg-zinc-900 p-2 px-3 rounded-md shadow-md border border-zinc-800 dark:border-zinc-100 flex items-center justify-center gap-2
+          className="z-50 bg-orange-100 dark:bg-zinc-900 p-2 px-3 rounded-md shadow-md border border-zinc-800 dark:border-zinc-100 flex items-center justify-center gap-2
           
           data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
         >
